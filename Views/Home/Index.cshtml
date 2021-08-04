@@ -1,0 +1,16 @@
+﻿@model bool
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <form enctype="multipart/form-data" method="post">
+        <input id="files" name="files" type="file" accept=".png, .jpeg, .jpg, image/png, image/jpeg, image/jpeg">
+        <input type="submit" value="Upload">
+    </form>
+    @if (Model)
+    {
+        <span>You have succesfully uploaded a photo</span>
+    }
+</div>
